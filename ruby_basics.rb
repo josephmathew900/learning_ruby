@@ -176,3 +176,47 @@ while index <= 5
     index += 1
 end
 
+
+#.....................For loops..........................
+friends = Array["Kevin", "Karen", "Oscar"]
+
+#Method 1
+for friend in friends
+    puts friend
+end
+
+#Method 2
+friends.each do |friend|
+    puts friend
+end
+
+for index in 0..5
+    puts index                                 #0 1 2 3 4 5
+end
+
+6.times do |index|
+    puts index                                  # 0 1 2 3 4 5
+end
+
+#........................Exponent Method...................
+def pow(base_num, pow_num)
+    result = 1
+    pow_num.times do
+        result = result * base_num
+    end
+    return result
+end
+
+puts pow(2, 3)    #8
+
+
+
+#.....................................Comments....................
+#Single line
+
+=begin
+multiline
+=end
+
+
+#.....................................Reading Files............................
