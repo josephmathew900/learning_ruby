@@ -148,3 +148,31 @@ else
     puts "You are not a male"
 end
 
+#.......................Case Expressions.....................
+def get_day_name(day)
+    day_name = ""
+
+    case day
+    when "mon"
+        day_name = "Monday"
+    when "tue"
+        day_name = "Tuesday"
+    when "wed"
+        day_name = "Wednesday"
+    else
+        day_name = "Invalid abbreviation"
+    end
+
+    return day_name
+end
+
+puts get_day_name("mon")   #Monday
+
+
+#.....................While loops..........................
+index  = 1
+while index <= 5
+    puts index                       #1 2 3 4 5
+    index += 1
+end
+
