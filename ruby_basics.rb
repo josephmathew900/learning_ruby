@@ -82,4 +82,69 @@ puts ("Hello " + name + ", you are cool!")
 =end
 
 
+puts "Enter a number"
+num1 = gets.chomp().to_i              #by default gets take input as string
+puts "Enter another number"
+num2 = gets.chomp().to_i
+sum = num1 + num2
+puts ("Sum: " + sum.to_s)
+
+
+#.................Arrays...................
+#friends = Array.new
+friends = Array["Kevin", "Karen", "Oscar"]
+puts friends
+puts friends[0]
+puts friends[-1]   #last element
+puts friends[0, 2]   #0,1
+friends[0] = "Dwight"   #Assign using index
+
+
+puts friends.length()  #3
+puts friends.include?("Karen")
+puts friends.reverse()        #Oscar, Karen, Kevin
+puts friends.sort()
+
+
+#...............Hashes....................
+states = {
+    "Pennsylvania" => "PA",
+    "New York"  => "NY",
+    "Oregon" => "OR"
+}
+
+
+puts states
+puts states["New York"]   #NY
+
+
+#..................Methods.....................
+def sayhi(user="no name")
+    puts "Hello " + user
+end
+
+sayhi("Joseph")   #call
+
+def cube(num)
+    puts "Before"
+    return num * num * num, 70   #we can retun multiple things
+    puts "After"
+end
+
+puts cube(2)   #8, 70
+puts cube(2)[0] #8       #each element can be accessed by index
+puts cube(2)[1]   #70
+
+
+#....................IF...................
+ismale = true
+istall = true
+
+if ismale and istall
+    puts "You are a tall male"
+elsif ismale and !istall
+    puts "You are a short male"
+else
+    puts "You are not a male"
+end
 
