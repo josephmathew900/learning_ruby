@@ -58,6 +58,28 @@ puts 10 / 7         #1                  integer / integer = integer  same for al
 puts 10 / 7.0       #1.428571....       integer / float = float
 
 
+puts "Enter your Name:"
+name = gets                 #input from user
+puts ("Hello " + name + ", you are cool!")
+
+#output
+=begin
+    Enter your Name:
+    joseph
+    Hello joseph
+    , you are cool!
+=end
+
+puts "Enter your Name:"
+name = gets.chomp()                 #to get rid of new line
+puts ("Hello " + name + ", you are cool!")
+
+#output
+=begin
+    Enter your Name:
+    joseph
+    Hello joseph, you are cool!
+=end
 
 
 
