@@ -42,5 +42,22 @@ puts name.index("J")   #0 - J position
 puts "programming".upcase()
 
 
+num = -10.2
+puts ("num:" + num.to_s)  #num:-10.2
+
+puts num.abs()   #10.2
+puts num.round() #-10
+
+puts num.ceil()  #-10  - next heighest number
+puts num.floor()  #-11  - next lowest number
+
+num = 2
+puts Math.sqrt(4)
+
+puts 10 / 7         #1                  integer / integer = integer  same for all operations (+, - , *)
+puts 10 / 7.0       #1.428571....       integer / float = float
+
+
+
 
 
